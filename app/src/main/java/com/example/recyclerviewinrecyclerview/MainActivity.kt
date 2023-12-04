@@ -10,7 +10,7 @@ class MainActivity : ComponentActivity() {
     private lateinit var binding: ActivityMainBinding
 
     private val bigRVAdapter by lazy(LazyThreadSafetyMode.NONE) {
-        BigRVAdapter(arrayList)
+        BigRVAdapter(arrayList,this,binding)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,10 +23,21 @@ class MainActivity : ComponentActivity() {
 
     }
 
-    private val arrayList: ArrayList<String>
+    private val arrayList: ArrayList<ItemEntity>
+        get() = arrayListOf(
+            ItemEntity("1号作者",stringList,1),
+            ItemEntity("2号作者",stringList,2),
+            ItemEntity("3号作者",stringList,1),
+            ItemEntity("4号作者",stringList,2),
+            ItemEntity("5号作者",stringList,1),
+            ItemEntity("6号作者",stringList,2),
+            ItemEntity("7号作者",stringList,1),
+
+        )
+
+    private val stringList: ArrayList<String>
         get() = arrayListOf(
             "1wwwww", "1wwwww", "1wwwww", "1wwwww", "1wwwww", "1wwwww", "1wwwww"
-
         )
 }
 

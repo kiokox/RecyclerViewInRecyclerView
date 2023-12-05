@@ -25,13 +25,13 @@ class MainActivity : ComponentActivity() {
 
     private val arrayList: ArrayList<ItemEntity>
         get() = arrayListOf(
-            ItemEntity("1号作者",stringList,1),
+            ItemEntity("1号作者",stringList,0),
             ItemEntity("2号作者",stringList,2),
-            ItemEntity("3号作者",stringList,1),
+            ItemEntity("3号作者",stringList,0),
             ItemEntity("4号作者",stringList,2),
-            ItemEntity("5号作者",stringList,1),
+            ItemEntity("5号作者",stringList,0),
             ItemEntity("6号作者",stringList,2),
-            ItemEntity("7号作者",stringList,1),
+            ItemEntity("7号作者",stringList,0),
 
         )
 

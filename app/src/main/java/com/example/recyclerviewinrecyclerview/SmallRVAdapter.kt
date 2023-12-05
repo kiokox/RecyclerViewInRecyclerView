@@ -1,5 +1,6 @@
 package com.example.recyclerviewinrecyclerview
 
+import androidx.recyclerview.widget.RecyclerView
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.viewholder.BaseViewHolder
 import com.example.recyclerviewinrecyclerview.R

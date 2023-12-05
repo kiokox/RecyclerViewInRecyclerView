@@ -14,10 +14,10 @@
         android:layout_gravity="center"
         android:text="第一个表"/>
 
-    <androidx.recyclerview.widget.RecyclerView
+    <com.example.recyclerviewinrecyclerview.ChildRecyclerView
         android:id="@+id/rv_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="190dp"
         tools:itemCount="10" />
 
 </LinearLayout>

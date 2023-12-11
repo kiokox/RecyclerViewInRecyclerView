@@ -22,8 +22,6 @@ class ChildRecyclerView : RecyclerView {
     )
 
     override fun dispatchTouchEvent(ev: MotionEvent): Boolean {
-        //父层ViewGroup不要拦截点击事件
-//        parent.requestDisallowInterceptTouchEvent(true)
         var isSliding: Boolean = false
 
         when (ev.action) {

@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.example.recyclerviewinrecyclerview.NestedScrollingParent2Layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_big"
+        android:layout_width="match_parent"
+        android:layout_height="289dp"
+        android:src="@mipmap/cover" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_big"
@@ -11,4 +17,4 @@
         android:layout_height="wrap_content"
         tools:itemCount="5"/>
 
-</LinearLayout>
+</com.example.recyclerviewinrecyclerview.NestedScrollingParent2Layout>
